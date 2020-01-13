@@ -1,0 +1,23 @@
+@mixin clear-float {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin level-center {
+  display: flex;
+  justify-content: center;
+}

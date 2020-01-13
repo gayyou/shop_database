@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <link rel="icon" href="<%= BASE_URL %>logo.png">
+  <script>
+  function resizeRem() {
+    let whdef = 100 / 1920;
+    // 根据设计稿的宽高和屏幕的宽度定义Rem的值
+    let wW = window.screen.availWidth;
+    let rem = wW * whdef;
+    document.documentElement.style.fontSize = rem + 'px';
+  }
+  window.onresize = resizeRem;
+  resizeRem();
+  </script>
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but client doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>

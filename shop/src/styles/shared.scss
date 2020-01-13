@@ -1,0 +1,53 @@
+@import "mixin";
+.item-key {
+  display: block;
+  font-size:18px;
+  font-weight:400;
+  line-height:31px;
+}
+
+.demo-spin-icon-load{
+  animation: ani-demo-spin 1s linear infinite;
+}
+
+.turn-page-container {
+  position: absolute;
+  bottom: .3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-spin {
+  color: #418c5f;
+}
+
+.item-container {
+  @include clear-float;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+
+  .item-input {
+    width:540px;
+    height:36px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(198,198,198,1);
+    opacity:1;
+    border-radius:4px;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .text-area {
+    width:540px;
+    height:160px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(198,198,198,1);
+    opacity:1;
+    border-radius:4px;
+    margin-left: 20px;
+    resize: none;
+    padding: 5px;
+  }
+}
